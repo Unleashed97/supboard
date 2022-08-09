@@ -1,0 +1,25 @@
+.btn {
+    padding: 1.2rem 7rem;
+
+    font-family: $family-title;
+    font-weight: $fw-bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    background: none;
+    border: 0;
+
+    cursor: pointer;
+
+    &--fill-black {
+        color: $colors-secondary;
+        background-color: $colors-primary;
+
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    &--fill-black:hover {
+        background-color: $colors-highlight;
+        color: $colors-primary;
+    }
+}

@@ -1,0 +1,118 @@
+.intro {
+    position: relative;
+    background: linear-gradient(
+            to right,
+            rgba($colors-primary, 0) 40%,
+            rgba($colors-primary, 0.2)
+        ),
+        url('../../img/intro/intro-bg.jpg') no-repeat 30% 50% / cover;
+
+    @media (min-width: $media-md) {
+        background-position: center;
+    }
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+
+        height: 456px;
+
+        background: url('../../img/intro/fit-tries.png') no-repeat center /
+            cover;
+
+        transform: translateY(40%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+
+        height: 456px;
+
+        background: url('../../img/intro/fit-tries.png') no-repeat center /
+            cover;
+
+        transform: translateY(75%) rotate(180deg);
+    }
+
+    &__inner {
+        position: relative;
+
+        min-height: 100vh;
+        padding-right: 4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        font-family: $family-title;
+        font-weight: $fw-bold;
+        color: $colors-additional;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__text-block {
+        position: relative;
+        max-width: 590px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 6.4rem;
+    }
+
+    &__text {
+        font-size: 2.4rem;
+    }
+
+    &__text-decor {
+        position: absolute;
+        bottom: 0;
+        z-index: 4;
+
+        display: none;
+
+        margin: 0;
+
+        font-size: 13rem;
+        font-weight: $fw-normal;
+        color: $colors-additional;
+
+        @media (min-width: $media-md) {
+            display: block;
+        }
+
+        &.intro__text-decor-1 {
+            bottom: 109px;
+            opacity: 0.3;
+        }
+
+        &.intro__text-decor-2 {
+            bottom: 0;
+            left: 276px;
+            opacity: 0.3;
+        }
+
+        &.intro__text-decor-3 {
+            max-width: 360px;
+
+            text-align: center;
+            font-family: $family-main;
+            font-size: 3.2rem;
+            font-weight: $fw-light;
+            font-style: italic;
+        }
+    }
+}
