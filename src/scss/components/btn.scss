@@ -22,4 +22,44 @@
         background-color: $colors-highlight;
         color: $colors-primary;
     }
+
+    &--play {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        font-family: $family-main;
+        font-size: $fs-md;
+        font-weight: $fw-normal;
+        color: $colors-secondary;
+        white-space: nowrap;
+
+        text-transform: none;
+
+        & svg {
+            margin-bottom: 1.2rem;
+        }
+
+        transition: color 0.3s ease-in-out;
+
+        & svg path {
+            transition: fill 0.3s ease-in-out;
+        }
+
+        & svg circle {
+            transition: stroke 0.3s ease-in-out;
+        }
+    }
+
+    &--play:hover {
+        color: $colors-additional;
+
+        & svg path {
+            fill: $colors-highlight;
+        }
+        & svg circle {
+            stroke: $colors-highlight;
+        }
+    }
 }

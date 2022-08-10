@@ -44,6 +44,16 @@ h6 {
     margin: 0;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';
