@@ -48,17 +48,21 @@
         position: relative;
 
         min-height: 100vh;
-        padding-right: 4rem;
 
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
 
         font-family: $family-title;
         font-weight: $fw-bold;
         color: $colors-additional;
         text-transform: uppercase;
         text-align: center;
+
+        @media (min-width: $media-md) {
+            padding-right: 4rem;
+            justify-content: flex-end;
+        }
     }
 
     &__text-block {

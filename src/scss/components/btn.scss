@@ -37,6 +37,17 @@
 
         text-transform: none;
 
+        &:hover {
+            color: $colors-additional;
+
+            & svg path {
+                fill: $colors-highlight;
+            }
+            & svg circle {
+                stroke: $colors-highlight;
+            }
+        }
+
         & svg {
             margin-bottom: 1.2rem;
         }
@@ -52,14 +63,25 @@
         }
     }
 
-    &--play:hover {
+    &--buy {
+        width: 100%;
+        padding: 1.8rem;
+        font-family: $family-title;
+        font-size: 4rem;
+        font-weight: $fw-bold;
         color: $colors-additional;
 
-        & svg path {
-            fill: $colors-highlight;
-        }
-        & svg circle {
-            stroke: $colors-highlight;
+        border: 2px solid $colors-additional;
+
+        background-color: transparent;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $colors-primary;
+            background-color: $colors-highlight;
+
+            border-color: $colors-highlight;
         }
     }
 }
