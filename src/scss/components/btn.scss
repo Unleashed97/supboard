@@ -84,4 +84,14 @@
             border-color: $colors-highlight;
         }
     }
+
+    &--submit {
+        padding: 1rem 6.6rem;
+
+        font-family: $family-title;
+        font-size: 2rem;
+        color: #000;
+
+        background-color: $colors-secondary;
+    }
 }

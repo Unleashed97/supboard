@@ -1,0 +1,42 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+
+    @media (min-width: $media-sm) {
+        max-width: 500px;
+    }
+
+    &__label {
+        margin-bottom: 6.7rem;
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px 0;
+
+        font-family: $family-main;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $colors-secondary;
+
+        background: none;
+        border: 0;
+        border-bottom: 1px solid rgba($colors-secondary, 0.4);
+
+        &:placeholder {
+            font-family: $family-main;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: rgab($colors-secondary, 0.2);
+        }
+    }
+
+    &__btn {
+    }
+}

@@ -254,8 +254,12 @@
 
     &__title {
         font-family: $family-title;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: $fw-normal;
         text-transform: uppercase;
+
+        @media (min-width: $media-md) {
+            font-size: 6rem;
+        }
     }
 }
