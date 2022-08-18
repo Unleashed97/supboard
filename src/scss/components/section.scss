@@ -291,11 +291,16 @@
 
         .tech__play-btn {
             position: absolute;
-            right: 350px;
             top: 50%;
+            right: 50%;
             z-index: 1;
 
-            transform: translateY(-50%);
+            transform: translate(50%, -50%);
+
+            @media (min-width: $media-md) {
+                right: 350px;
+                transform: translateX(0);
+            }
         }
     }
 
@@ -307,9 +312,13 @@
 
     &__title {
         font-family: $family-title;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: $fw-normal;
         text-transform: uppercase;
+
+        @media (min-width: $media-sm) {
+            font-size: 4rem;
+        }
 
         @media (min-width: $media-md) {
             font-size: 6rem;
