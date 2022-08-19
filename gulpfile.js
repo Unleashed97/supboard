@@ -19,6 +19,7 @@ import imagemin from 'gulp-imagemin'
 import webp from 'gulp-webp'
 import ifPlugin from 'gulp-if'
 import notify from 'gulp-notify'
+import replace from 'gulp-replace'
 
 const srcFolder = 'src'
 const distFolder = 'dist'
@@ -97,6 +98,7 @@ export const styles = () => {
             }),
         )
         .pipe(sass())
+        .pipe(replace('../../', '../'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(gulp.dest(path.dist.css))
