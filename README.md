@@ -11,7 +11,7 @@ Layout
 
 ## How it looks
 
-![first window screen](https://github.com/Unleashed97/supboard/blob/master/docs/supboard-screen.jpg?raw=true)
+![first window screen](https://github.com/Unleashed97/supboard/blob/main/docs/supboard-screen.jpg?raw=true)
 
 ## How to test
 
