@@ -1,11 +1,25 @@
 .intro {
     position: relative;
-    background: linear-gradient(
+    background-image: linear-gradient(
             to right,
             rgba($colors-primary, 0) 40%,
             rgba($colors-primary, 0.2)
         ),
-        url('../../img/intro/intro-bg.jpg') no-repeat 30% 50% / cover;
+        url('../../img/intro/intro-bg.webp');
+
+    background-image: linear-gradient(
+            to right,
+            rgba($colors-primary, 0) 40%,
+            rgba($colors-primary, 0.2)
+        ),
+        image-set(
+            url('../../img/intro/intro-bg.webp') type('image/webp'),
+            url('../../img/intro/intro-bg.jpg') type('image/jpeg')
+        );
+
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-size: cover;
 
     @media (min-width: $media-md) {
         background-position: center;
@@ -22,8 +36,15 @@
 
         height: 456px;
 
-        background: url('../../img/intro/fir-tries.png') no-repeat center /
-            cover;
+        background-image: url('../../img/intro/fir-tries.webp');
+        background-image: image-set(
+            url('../../img/intro/fir-tries.webp') type('image/webp'),
+            url('../../img/intro/fir-tries.png') type('image/png')
+        );
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
         transform: translateY(40%);
     }
@@ -38,9 +59,15 @@
 
         height: 456px;
 
-        background: url('../../img/intro/fir-tries.png') no-repeat center /
-            cover;
+        background-image: url('../../img/intro/fir-tries.webp');
+        background-image: image-set(
+            url('../../img/intro/fir-tries.webp') type('image/webp'),
+            url('../../img/intro/fir-tries.png') type('image/png')
+        );
 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         transform: translateY(75%) rotate(180deg);
     }
 

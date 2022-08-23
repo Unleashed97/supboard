@@ -134,6 +134,21 @@ export const scripts = () => {
 export const images = () => {
     return gulp
         .src(path.src.img)
+        .pipe(
+            plumber({
+                errorHandler: function (err) {
+                    notify.onError({
+                        title: 'Images',
+                        message: 'Error: <%= error.message %>',
+                    })(err)
+                    this.emit('end')
+                },
+            }),
+        )
+        .pipe(newer(path.dist.img))
+        .pipe(webp())
+        .pipe(gulp.dest(path.dist.img))
+        .pipe(gulp.src(path.src.img))
         .pipe(newer(path.dist.img))
         .pipe(
             ifPlugin(

@@ -1,8 +1,17 @@
 .section {
     &--info {
         position: relative;
-        background: url('../../img/info/info-bg.jpg') no-repeat 30% 50% / cover;
         min-height: 100vh;
+
+        background-repeat: no-repeat;
+        background-position: 30% 50%;
+        background-size: cover;
+
+        background-image: url('../../img/info/info-bg.webp');
+        background-image: image-set(
+            url('../../img/info/info-bg.webp') type('image/webp'),
+            url('../../img/info/info-bg.jpg') type('image/jpeg')
+        );
 
         padding-top: 180px;
 
@@ -207,7 +216,16 @@
             justify-content: center;
             align-items: center;
 
-            background: url('../../img/buy/star.png') no-repeat center / cover;
+            background-image: url('../../img/buy/star.webp');
+
+            background-image: image-set(
+                url('../../img/buy/star.png') type('image/webp'),
+                url('../../img/buy/star.png') type('image/jpeg')
+            );
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
 
             transition: transform 0.3s ease-in-out;
 
@@ -270,8 +288,16 @@
         .tech__top {
             padding: 84px 0;
 
-            background: url('../../img/tech/tech-bg.jpg') no-repeat center /
-                cover;
+            background-image: url('../../img/tech/tech-bg.webp');
+
+            background-image: image-set(
+                url('../../img/tech/tech-bg.webp') type('image/webp'),
+                url('../../img/tech/tech-bg.jpeg') type('image/jpeg')
+            );
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
 
         .tech__inner {
