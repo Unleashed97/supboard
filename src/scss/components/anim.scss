@@ -1,0 +1,70 @@
+// animation duration
+$anim-duration: 0.6s;
+
+$anim-offset-mobile: 50px;
+$anim-offset-desktop: 50%;
+
+.anim {
+    &--fade-up {
+        transform: translateY($anim-offset-mobile);
+        opacity: 0;
+
+        transition: all $anim-duration ease-in-out;
+
+        @media (min-width: $media-md) {
+            transform: translateY($anim-offset-desktop);
+        }
+
+        &.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    &--fade-down {
+        transform: translateY(-$anim-offset-mobile);
+        opacity: 0;
+
+        transition: all $anim-duration ease-in-out;
+
+        @media (min-width: $media-md) {
+            transform: translateY(-$anim-offset-desktop);
+        }
+
+        &.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    &--fade-right {
+        opacity: 0;
+        transform: translateX(-$anim-offset-mobile);
+
+        transition: all $anim-duration ease-in-out;
+
+        @media (min-width: $media-md) {
+            transform: translateX(-$anim-offset-desktop);
+        }
+
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    &--fade-left {
+        opacity: 0;
+        transform: translateX($anim-offset-mobile);
+
+        transition: all $anim-duration ease-in-out;
+
+        @media (min-width: $media-md) {
+            transform: translateX($anim-offset-desktop);
+        }
+
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
