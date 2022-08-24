@@ -25,6 +25,7 @@
         left: 15px;
         z-index: 11;
 
+        display: block;
         width: 30px;
         height: 25px;
         margin: 0;
@@ -52,6 +53,10 @@
         }
         &:checked + .burger .burger__item:nth-child(3) {
             transform: translateY(-11px) rotate(135deg);
+        }
+
+        @media (min-width: $media-md) {
+            display: none;
         }
     }
 

@@ -140,8 +140,9 @@
     }
 
     &--buy {
+        overflow-x: hidden;
         .section__inner {
-            padding-top: 15rem;
+            padding: 15rem 0 1rem;
         }
         .section__title {
             color: $colors-additional;
@@ -153,8 +154,6 @@
             flex-direction: column;
             align-items: center;
 
-            overflow-x: hidden;
-
             @media (min-width: $media-xl) {
                 flex-direction: row;
                 justify-content: space-between;
@@ -164,6 +163,7 @@
 
         .buy__text-block {
             position: relative;
+            z-index: 1;
             min-width: auto;
             order: 2;
 
@@ -211,7 +211,7 @@
             position: absolute;
             right: 0;
             bottom: 100%;
-            z-index: 1;
+            z-index: 2;
 
             width: 100px;
             height: 100px;
