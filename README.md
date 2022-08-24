@@ -1,6 +1,6 @@
 # Supboard
 
-Layout
+In this project I focused on graphics, modern formats of images like webp, and recollect about <picture> tag. Animation practiced as well.
 
 ## Stack
 
