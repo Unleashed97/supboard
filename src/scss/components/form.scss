@@ -1,8 +1,12 @@
 .form {
     display: flex;
     flex-direction: column;
-
     margin: 0 auto;
+
+    font-family: $family-main;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $colors-secondary;
 
     @media (min-width: $media-sm) {
         max-width: 500px;
@@ -14,6 +18,12 @@
         &:last-child {
             margin-bottom: 5rem;
         }
+    }
+
+    &__label-text {
+        transform: translateY(30px);
+
+        transition: 0.3s;
     }
 
     &__input {
@@ -34,6 +44,11 @@
             font-size: 1.8rem;
             font-weight: 700;
             color: rgab($colors-secondary, 0.2);
+        }
+
+        &:focus {
+            outline: 0;
+            border-color: $colors-highlight;
         }
     }
 

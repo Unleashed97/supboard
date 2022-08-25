@@ -121,6 +121,7 @@
 
         .info__specs-item {
             display: flex;
+            gap: 1rem;
             margin-bottom: 2rem;
 
             &:last-child {
@@ -130,7 +131,7 @@
         .info__specs-item-title {
             width: 100px;
             margin-right: 1rem;
-            @media (min-width: $media-lg) {
+            @media (min-width: $media-sm) {
                 width: 190px;
             }
         }

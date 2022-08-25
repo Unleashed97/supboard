@@ -36,9 +36,7 @@ a {
 }
 
 a:focus,
-button:focus,
-input:focus,
-textarea:focus {
+button:focus {
     outline: 3px solid $colors-highlight;
     outline-offset: 3px;
 }

@@ -6,65 +6,57 @@ $anim-offset-desktop: 50%;
 
 .anim {
     &--fade-up {
-        transform: translateY($anim-offset-mobile);
-        opacity: 0;
-
-        transition: all $anim-duration ease-in-out;
-
         @media (min-width: $media-md) {
-            transform: translateY($anim-offset-desktop);
-        }
+            transform: translateY($anim-offset-mobile);
+            opacity: 0;
 
-        &.active {
-            transform: translateY(0);
-            opacity: 1;
+            transition: all $anim-duration ease-in-out;
+
+            &.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     }
     &--fade-down {
-        transform: translateY(-$anim-offset-mobile);
-        opacity: 0;
-
-        transition: all $anim-duration ease-in-out;
-
         @media (min-width: $media-md) {
-            transform: translateY(-$anim-offset-desktop);
-        }
+            transform: translateY(-$anim-offset-mobile);
+            opacity: 0;
 
-        &.active {
-            transform: translateY(0);
-            opacity: 1;
+            transition: all $anim-duration ease-in-out;
+
+            &.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     }
 
     &--fade-right {
-        opacity: 0;
-        transform: translateX(-$anim-offset-mobile);
-
-        transition: all $anim-duration ease-in-out;
-
         @media (min-width: $media-md) {
-            transform: translateX(-$anim-offset-desktop);
-        }
+            opacity: 0;
+            transform: translateX(-$anim-offset-mobile);
 
-        &.active {
-            transform: translateX(0);
-            opacity: 1;
+            transition: all $anim-duration ease-in-out;
+
+            &.active {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     }
 
     &--fade-left {
-        opacity: 0;
-        transform: translateX($anim-offset-mobile);
-
-        transition: all $anim-duration ease-in-out;
-
         @media (min-width: $media-md) {
-            transform: translateX($anim-offset-desktop);
-        }
+            opacity: 0;
+            transform: translateX($anim-offset-mobile);
 
-        &.active {
-            transform: translateX(0);
-            opacity: 1;
+            transition: all $anim-duration ease-in-out;
+
+            &.active {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     }
 }
