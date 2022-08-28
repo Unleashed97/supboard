@@ -5,17 +5,14 @@
             rgba($colors-primary, 0) 40%,
             rgba($colors-primary, 0.2)
         ),
-        url('../../img/intro/intro-bg.webp');
+        url('../../img/intro/intro-bg.jpg');
 
     background-image: linear-gradient(
             to right,
             rgba($colors-primary, 0) 40%,
             rgba($colors-primary, 0.2)
         ),
-        image-set(
-            url('../../img/intro/intro-bg.webp') type('image/webp'),
-            url('../../img/intro/intro-bg.jpg') type('image/jpeg')
-        );
+        image-set(url('../../img/intro/intro-bg.webp') type('image/webp'));
 
     background-repeat: no-repeat;
     background-position: 30% 50%;
@@ -36,10 +33,9 @@
 
         height: 456px;
 
-        background-image: url('../../img/intro/fir-tries.webp');
+        background-image: url('../../img/intro/fir-tries.png');
         background-image: image-set(
-            url('../../img/intro/fir-tries.webp') type('image/webp'),
-            url('../../img/intro/fir-tries.png') type('image/png')
+            url('../../img/intro/fir-tries.webp') type('image/webp')
         );
 
         background-repeat: no-repeat;
@@ -59,10 +55,9 @@
 
         height: 456px;
 
-        background-image: url('../../img/intro/fir-tries.webp');
+        background-image: url('../../img/intro/fir-tries.png');
         background-image: image-set(
-            url('../../img/intro/fir-tries.webp') type('image/webp'),
-            url('../../img/intro/fir-tries.png') type('image/png')
+            url('../../img/intro/fir-tries.webp') type('image/webp')
         );
 
         background-repeat: no-repeat;

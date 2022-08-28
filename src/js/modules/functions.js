@@ -21,3 +21,19 @@ export const animation = () => {
         observer.observe(el)
     })
 }
+
+export const handleBurger = () => {
+    const burgerCheckbox = document.querySelector('.burger__checkbox')
+
+    burgerCheckbox.addEventListener('change', () => {
+        if (burgerCheckbox.checked) document.body.classList.add('fixed')
+        else document.body.classList.remove('fixed')
+    })
+
+    window.addEventListener('resize', (e) => {
+        if (e.target.innerWidth >= 768) {
+            document.body.classList.remove('fixed')
+            burgerCheckbox.checked = false
+        }
+    })
+}

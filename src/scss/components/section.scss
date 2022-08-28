@@ -3,14 +3,14 @@
         position: relative;
         min-height: 100vh;
 
+        background-color: #000;
         background-repeat: no-repeat;
         background-position: 30% 50%;
         background-size: cover;
 
-        background-image: url('../../img/info/info-bg.webp');
+        background-image: url('../../img/info/info-bg.jpg');
         background-image: image-set(
-            url('../../img/info/info-bg.webp') type('image/webp'),
-            url('../../img/info/info-bg.jpg') type('image/jpeg')
+            url('../../img/info/info-bg.webp') type('image/webp')
         );
 
         padding-top: 180px;
@@ -221,11 +221,10 @@
             justify-content: center;
             align-items: center;
 
-            background-image: url('../../img/buy/star.webp');
+            background-image: url('../../img/buy/star.jpg');
 
             background-image: image-set(
-                url('../../img/buy/star.png') type('image/webp'),
-                url('../../img/buy/star.png') type('image/jpeg')
+                url('../../img/buy/star.png') type('image/webp')
             );
 
             background-repeat: no-repeat;
@@ -273,6 +272,7 @@
     }
 
     &--tech {
+        background-color: #fff;
         .tech__list {
             margin: 0;
 
@@ -293,11 +293,10 @@
         .tech__top {
             padding: 84px 0;
 
-            background-image: url('../../img/tech/tech-bg.webp');
+            background-image: url('../../img/tech/tech-bg.jpg');
 
             background-image: image-set(
-                url('../../img/tech/tech-bg.webp') type('image/webp'),
-                url('../../img/tech/tech-bg.jpeg') type('image/jpeg')
+                url('../../img/tech/tech-bg.webp') type('image/webp')
             );
 
             background-repeat: no-repeat;

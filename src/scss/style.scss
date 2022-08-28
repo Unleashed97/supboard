@@ -60,6 +60,11 @@ p {
     margin: 0;
 }
 
+// fixed body
+.fixed {
+    overflow: hidden;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';
